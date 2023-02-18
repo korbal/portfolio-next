@@ -13,7 +13,9 @@ const NAV_ITEMS = [
 
 const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
+  let currentTheme = theme === "system" ? systemTheme : theme;
+
+  console.log(currentTheme);
 
   const [navbar, setNavbar] = useState(false);
   return (
