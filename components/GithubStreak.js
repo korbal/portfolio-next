@@ -1,18 +1,14 @@
-function StreakStats() {
+function GithubStreak() {
   return (
-    <div className="">
-      <iframe
-        // className="dark:bg-indigo-600" fing
-        // width="100%"
-        // height="300"
-        width="100%"
-        height="300"
-        scrolling="no"
-        frameBorder="no"
-        src={`https://streak-stats.demolab.com?user=korbal&theme=nightowl&hide_border=false&date_format=%5BY%20%5DM%20j&border_radius=5`}
+    <div className="flex flex-row justify-center">
+      <img
+        src="https://streak-stats.demolab.com?user=korbal&theme=nightowl&hide_border=true&date_format=%5BY%20%5DM%20j"
+        alt="GitHub Streak"
+        height="300px"
+        width="800px"
       />
     </div>
   );
 }
 
-export default StreakStats;
+export default GithubStreak;

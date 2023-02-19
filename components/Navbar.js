@@ -13,7 +13,18 @@ const NAV_ITEMS = [
 
 const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  let currentTheme = theme === "system" ? systemTheme : theme;
+  // let currentTheme = theme === "system" ? systemTheme : theme;
+
+  const [currentTheme, setCurrentTheme] = React.useState();
+
+  React.useEffect(() => {
+    setCurrentTheme(theme);
+  }, [theme]);
+
+  const handleClick = () => {
+    setTheme(currentTheme === "dark" ? "light" : "dark");
+    setCurrentTheme(currentTheme === "dark" ? "light" : "dark");
+  };
 
   console.log(currentTheme);
 
@@ -77,7 +88,7 @@ const Navbar = () => {
                   onClick={() => setTheme("dark")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiMoonFill size={25} />
+                  <RiMoonFill size={25} color="black" />
                 </button>
               )}
             </div>

@@ -17,3 +17,7 @@ h2 {
 h3 {
   @apply dark:text-lime-200 text-xl font-bold md:text-3xl;
 }
+
+/* .github-streak-inframe {
+  @apply dark:bg-slate-900;
+} */
