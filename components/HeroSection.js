@@ -4,6 +4,11 @@ import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
 import GithubStreak from "../components/GithubStreak";
+import {
+  AiOutlineMail,
+  AiOutlineGithub,
+  AiOutlineTwitter,
+} from "react-icons/ai";
 
 const HeroSection = () => {
   return (
@@ -46,6 +51,37 @@ const HeroSection = () => {
       {/* <div className="bg-white dark:bg-slate-200"> */}
       <div>
         <GithubStreak />
+      </div>
+
+      <div className="flex flex-row justify-between mt-10">
+        <a href="https://github.com/korbal" rel="noreferrer" target="_blank">
+          <AiOutlineGithub
+            className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+            size={100}
+          />
+        </a>
+
+        <a
+          href="mailto:balint.j.korosi@gmail.com"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <AiOutlineMail
+            className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+            size={100}
+          />
+        </a>
+
+        <a
+          href="https://twitter.com/korosibalint"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <AiOutlineTwitter
+            className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+            size={100}
+          />
+        </a>
       </div>
 
       <div className="flex flex-row items-center text-center justify-center mt-5">
