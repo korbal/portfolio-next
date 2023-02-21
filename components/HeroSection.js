@@ -57,7 +57,7 @@ const HeroSection = () => {
         <a href="https://github.com/korbal" rel="noreferrer" target="_blank">
           <AiOutlineGithub
             className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
-            size={100}
+            size={90}
           />
         </a>
 
@@ -79,7 +79,7 @@ const HeroSection = () => {
         >
           <AiOutlineTwitter
             className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
-            size={100}
+            size={90}
           />
         </a>
       </div>
