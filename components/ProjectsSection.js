@@ -33,15 +33,15 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="px-10">
+    <section id="projects" className="px-10 pt-10 md:pt-32">
       <h2 className="text-center">
         My projects
         <hr className="w-6 h-1 mx-auto my-10 bg-teal-500 border-0 rounded" />
       </h2>
-      <div className="flex flex-col space-y-28 mt-8">
+      <div className="flex flex-col mt-8 space-y-28">
         {projects.map((project, idx) => {
           return (
-            <div key={idx}>
+            <div key={idx} className="">
               <div className="flex flex-col md:flex-row md:space-x-12 ">
                 <div className="md:w-1/2">
                   <Link href={project.link} target="_blank">
@@ -50,13 +50,13 @@ const ProjectsSection = () => {
                       alt=""
                       width={1000}
                       height={1000}
-                      className="rounded-xl shadow-xl hover:opacity-70"
+                      className="shadow-xl rounded-xl hover:opacity-70"
                     />
                   </Link>
                 </div>
-                <div className="md:w-1/2 flex flex-col justify-start ">
-                  <h3 className=" my-6">{project.name}</h3>
-                  <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                <div className="flex flex-col justify-center md:w-1/2 ">
+                  <h3 className="my-2 ">{project.name}</h3>
+                  <p className="mb-4 text-xl leading-7 text-neutral-600 dark:text-neutral-400">
                     {project.description}
                   </p>
                   {/* <p>
@@ -66,17 +66,17 @@ const ProjectsSection = () => {
                       </a>
                     ) : null}
                   </p> */}
-                  <div className="flex flex-row align-bottom space-x-4">
+                  <div className="flex flex-row space-x-4 align-bottom">
                     <Link href={project.github} target="_blank">
                       <BsGithub
                         size={30}
-                        className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        className="transition-transform cursor-pointer hover:-translate-y-1"
                       />
                     </Link>
                     <Link href={project.link} target="_blank">
                       <BsWindow
                         size={30}
-                        className="hover:-translate-y-1 transition-transform cursor-pointer"
+                        className="transition-transform cursor-pointer hover:-translate-y-1"
                       />
                     </Link>
 
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
                       <Link href={project.extralink} target="_blank">
                         <BsReddit
                           size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          className="transition-transform cursor-pointer hover:-translate-y-1"
                         />
                       </Link>
                     )}

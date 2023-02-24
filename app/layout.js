@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       {/* <body className="dark:bg-stone-900"> */}
-      <body className="dark:bg-slate-900">
+      <body className="mx-8 dark:bg-slate-900">
         <ThemeProvider
           enableSystem={false}
           attribute="class"

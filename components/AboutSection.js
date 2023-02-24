@@ -34,14 +34,14 @@ const skills = [
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-4 md:pb-20">
+      <div className="pb-12 my-12 md:pt-4 md:pb-20">
         <h2 className="text-center">
           About me
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
         </h2>
-        <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
+        <div className="flex flex-col items-stretch justify-center space-y-10 align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
           <div className="md:w-1/2">
-            <h3 className="text-center  mb-6 md:text-left">What I do</h3>
+            <h3 className="mb-6 text-center md:text-left">What I do</h3>
             <p>
               I&#39;m Balint, a self-taught coder with a TAFE diploma in
               Business Programming. I love solving real-world problems through
@@ -75,14 +75,14 @@ const AboutSection = () => {
             </p>
           </div>
           <div className="md:w-1/2">
-            <h3 className="text-center  mb-6 md:text-left">My skills</h3>
+            <h3 className="mb-6 text-center md:text-left">My skills</h3>
 
-            <div className="flex flex-wrap flex-row justify-center md:justify-start">
+            <div className="flex flex-row flex-wrap justify-center md:justify-start">
               {skills.map((item, idx) => {
                 return (
                   <p
                     key={idx}
-                    className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold dark:text-gray-500"
+                    className="px-4 py-2 mt-2 mr-2 font-semibold text-gray-500 bg-gray-200 rounded dark:text-gray-500"
                   >
                     {item.skill}
                   </p>
