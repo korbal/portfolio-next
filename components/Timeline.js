@@ -43,7 +43,7 @@ const Timeline = () => {
                   In 5 years I learned 5 different languages to various extents.
                   English to native level, passed the German C1 exam, Spanish to
                   B2 level, Russian to A2 level, and passed the HSK2 exam in
-                  Chinese.
+                  Mandarin Chinese.
                 </p>
               </div>
             </div>
