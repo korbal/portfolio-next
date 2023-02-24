@@ -37,7 +37,7 @@ const Timeline = () => {
               </div>
               <div className="flex-grow mt-6 sm:pl-6 sm:mt-0">
                 <h3 className="mb-1 text-xl font-medium text-white title-font">
-                  Started the "Five languages in five years" project
+                  Started the &quot;Five languages in five years&quot; project
                 </h3>
                 <p className="leading-relaxed">
                   In 5 years I learned 5 different languages to various extents.
@@ -148,8 +148,8 @@ const Timeline = () => {
                   Started learning web development
                 </h3>
                 <p className="leading-relaxed ">
-                  My goal is to become a full-stack developer. I'm primarily
-                  learning at{" "}
+                  My goal is to become a full-stack developer. I&lsquo;m
+                  primarily learning at{" "}
                   <a href="https://otevotnyelv.com/ztm" className="underline">
                     Zero To Mastery
                   </a>{" "}
