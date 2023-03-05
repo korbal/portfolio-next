@@ -9,6 +9,7 @@ export default function Head() {
         defer
         data-website-id="d4be25cc-53f9-448d-9dfd-f381beba8a0a"
         src="https://umami-anal.vercel.app/umami.js"
+        data-domains="balint.vercel.app"
       ></script>
       {/* TODO: favicon */}
       {/* <link rel="icon" href="/favicon.ico" /> */}
