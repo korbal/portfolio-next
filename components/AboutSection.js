@@ -28,6 +28,8 @@ const skills = [
   { skill: "Next.js" },
   { skill: "Nuxt.js" },
   { skill: "Tailwind CSS" },
+  { skill: "PostgreSQL" },
+  { skill: "Supabase" },
   { skill: "Github" },
 ];
 
