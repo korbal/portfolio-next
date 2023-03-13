@@ -24,7 +24,7 @@ const skills = [
   { skill: "CSS" },
   { skill: "Javascript" },
   { skill: "React" },
-  { skill: "Vue" },
+  { skill: "Vue.js" },
   { skill: "Next.js" },
   { skill: "Nuxt.js" },
   { skill: "Tailwind CSS" },
